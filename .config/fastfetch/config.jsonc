@@ -1,0 +1,144 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo":{
+      "source":"~/ASCII-ART/koyomi.txt",
+  },
+  "display": {
+    "separator": "|",
+    "color": "white"
+  },
+  "modules": [
+    {
+      "type": "title",
+      "color": {
+        "user": "white",
+        "at": "white",
+        "host": "white"
+      }
+    },
+    "separator",
+    {
+      "type": "command",
+      "shell": "/bin/sh",
+      "text": "/usr/bin/python3 ~/.config/fastfetch/weather.py",
+      "key": "",
+      "keyColor": "white"
+    },
+    {
+      "type": "command",
+      "shell": "/bin/sh",
+      "text": "/usr/bin/python3 ~/.config/fastfetch/subscribers.py",
+      "key": "",
+      "keyColor": "red"
+    },
+    {
+      "type": "os",
+      "key": "󰣇",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "host",
+      "key": "",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "kernel",
+      "key": "",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "uptime",
+      "key": "",
+      "keyColor": "green"
+    },
+    {
+      "type": "packages",
+      "key": "",
+      "keyColor": "blue"
+    },
+    {
+      "type": "shell",
+      "key": "",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "display",
+      "key": "󰃐",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "wm",
+      "key": "",
+      "keyColor": "red"
+    },
+    {
+      "type": "cursor",
+      "key": "",
+      "keyColor": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": "",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "terminalfont",
+      "key": "",
+      "keyColor": "red"
+    },
+    {
+      "type": "cpu",
+      "key": "",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "gpu",
+      "key": "",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "memory",
+      "key": "",
+      "keyColor": "green"
+    },
+    {
+      "type": "swap",
+      "key": "",
+      "keyColor": "blue"
+    },
+    {
+      "type": "disk",
+      "key": "",
+      "keyColor": "magenta",
+      "arguments": {
+        "mountpoint": "/"
+      }
+    },
+    {
+      "type": "disk",
+      "key": "",
+      "keyColor": "magenta",
+      "arguments": {
+        "mountpoint": "/home"
+      }
+    },
+    {
+      "type": "localip",
+      "key": "",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "battery",
+      "key": "",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "locale",
+      "key": "",
+      "keyColor": "green"
+    },
+    "break",
+    "colors"
+  ]
+}
+
