@@ -1,0 +1,24 @@
+2024/08/04-02:38:29.605 3dd Reusing MANIFEST /home/kirito/.dotfiles/.config/BraveSoftware/Brave-Browser-Nightly/Default/Local Extension Settings/mnojpmjdmbbfmejpflffifhffcmidifd/MANIFEST-000001
+2024/08/04-02:38:29.605 3dd Recovering log #3
+2024/08/04-02:38:29.722 3dd Reusing old log /home/kirito/.dotfiles/.config/BraveSoftware/Brave-Browser-Nightly/Default/Local Extension Settings/mnojpmjdmbbfmejpflffifhffcmidifd/000003.log 
+2024/08/04-02:44:46.819 3a1 Level-0 table #5: started
+2024/08/04-02:44:46.886 3a1 Level-0 table #5: 243060 bytes OK
+2024/08/04-02:44:46.999 3a1 Delete type=0 #3
+2024/08/04-02:51:32.245 3a1 Level-0 table #7: started
+2024/08/04-02:51:32.367 3a1 Level-0 table #7: 240453 bytes OK
+2024/08/04-02:51:32.437 3a1 Delete type=0 #4
+2024/08/04-03:01:32.712 3a1 Compacting 1@1 + 1@2 files
+2024/08/04-03:01:32.832 3a1 Generated table #8@1: 13 keys, 50605 bytes
+2024/08/04-03:01:32.832 3a1 Compacted 1@1 + 1@2 files => 50605 bytes
+2024/08/04-03:01:32.898 3a1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/04-03:01:32.899 3a1 Delete type=2 #5
+2024/08/04-03:01:32.899 3a1 Delete type=2 #7
+2024/08/04-03:03:27.789 3a1 Level-0 table #10: started
+2024/08/04-03:03:27.914 3a1 Level-0 table #10: 243509 bytes OK
+2024/08/04-03:03:27.973 3a1 Delete type=0 #6
+2024/08/04-03:16:33.395 3a1 Compacting 1@1 + 1@2 files
+2024/08/04-03:16:33.513 3a1 Generated table #11@1: 18 keys, 52381 bytes
+2024/08/04-03:16:33.513 3a1 Compacted 1@1 + 1@2 files => 52381 bytes
+2024/08/04-03:16:33.612 3a1 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/08/04-03:16:33.614 3a1 Delete type=2 #8
+2024/08/04-03:16:33.614 3a1 Delete type=2 #10

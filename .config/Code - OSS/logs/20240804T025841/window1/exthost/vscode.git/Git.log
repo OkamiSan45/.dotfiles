@@ -1,0 +1,42 @@
+2024-08-04 02:58:45.226 [info] [main] Log level: Info
+2024-08-04 02:58:45.226 [info] [main] Validating found git in: "git"
+2024-08-04 02:58:45.226 [info] [main] Using git "2.46.0" from "git"
+2024-08-04 02:58:45.226 [info] [Model][doInitialScan] Initial repository scan started
+2024-08-04 02:58:45.226 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2024-08-04 02:58:47.046 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:58:47.052 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]
+2024-08-04 02:59:12.916 [info] [main] Log level: Info
+2024-08-04 02:59:12.916 [info] [main] Validating found git in: "git"
+2024-08-04 02:59:12.916 [info] [main] Using git "2.46.0" from "git"
+2024-08-04 02:59:12.916 [info] [Model][doInitialScan] Initial repository scan started
+2024-08-04 02:59:12.916 [info] > git rev-parse --show-toplevel [12ms]
+2024-08-04 02:59:12.916 [info] > git rev-parse --path-format=relative --show-toplevel [6ms]
+2024-08-04 02:59:12.927 [info] > git rev-parse --show-toplevel [3ms]
+2024-08-04 02:59:12.936 [info] > git rev-parse --path-format=relative --show-toplevel [3ms]
+2024-08-04 02:59:12.942 [info] > git rev-parse --show-toplevel [1ms]
+2024-08-04 02:59:12.948 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 02:59:12.956 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:12.964 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]
+2024-08-04 02:59:12.971 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:12.977 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]
+2024-08-04 02:59:12.984 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:12.990 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]
+2024-08-04 02:59:12.997 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:13.005 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 02:59:13.013 [info] > git rev-parse --show-toplevel [1ms]
+2024-08-04 02:59:13.022 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 02:59:13.029 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:13.038 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 02:59:13.047 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:13.058 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 02:59:13.066 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:13.073 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 02:59:13.080 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:13.088 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]
+2024-08-04 02:59:13.094 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:13.100 [info] > git rev-parse --path-format=relative --show-toplevel [2ms]
+2024-08-04 02:59:13.101 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2024-08-04 02:59:42.375 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 02:59:42.381 [info] > git rev-parse --path-format=relative --show-toplevel [1ms]
+2024-08-04 03:14:33.576 [info] > git rev-parse --show-toplevel [2ms]
+2024-08-04 03:14:33.583 [info] > git rev-parse --path-format=relative --show-toplevel [3ms]
