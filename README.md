@@ -30,7 +30,7 @@ Ensure you have the following tools installed:
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/yourusername/dotfiles.git ~/.dotfiles
+   git clone https://github.com/OkamiSan45/dotfiles.git ~/.dotfiles
    cd ~/.dotfiles
 2. **Usage**
     ```sh
