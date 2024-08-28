@@ -1,12 +1,10 @@
 #!/bin/bash
 
+# Directory containing wallpapers
 WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
-WALLPAPERS=("$WALLPAPER_DIR"/*)
-RANDOM_WALLPAPER="${WALLPAPERS[RANDOM % ${#WALLPAPERS[@]}]}"
 
-# Using feh
-feh --bg-scale "$RANDOM_WALLPAPER"
+# Select a random wallpaper file from the directory
+WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
 
-# Uncomment below if using nitrogen
-# nitrogen --set-zoom-fill "$RANDOM_WALLPAPER" --save
-
+# Set the selected wallpaper using feh
+feh --bg-scale "$WALLPAPER"

@@ -2,24 +2,37 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/kirito/.config": "__default__profile__"
+            "file:///home/kirito/bin": "__default__profile__",
+            "file:///home/kirito/projects/AnyPay": "__default__profile__",
+            "file:///home/kirito/projects/anistore": "__default__profile__",
+            "file:///home/kirito/Downloads": "__default__profile__",
+            "file:///home/kirito/.config/i3": "__default__profile__",
+            "file:///": "__default__profile__",
+            "file:///home/kirito/projects/manabu": "__default__profile__",
+            "file:///home/kirito/projects": "__default__profile__",
+            "file:///home/kirito/projects/Anistore": "__default__profile__",
+            "file:///home/kirito/projects/amzon": "__default__profile__",
+            "file:///home/kirito/projects/3D-Parallax-Website-in-JavaScript": "__default__profile__",
+            "file:///home/kirito/.dotfiles": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1724866918426": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
     "telemetry.machineId": "f1c103af1e34d0baec85f077cc39d5f7a6e82cd216f7ad930c8ce3a318ae6cff",
-    "telemetry.devDeviceId": "0028ac22-bbfb-42b3-a7fe-bd711bbd63b6",
+    "telemetry.devDeviceId": "0eb1cc7b-f617-430c-830c-e941fc7e0a3c",
     "backupWorkspaces": {
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/kirito/.config"
+                "folderUri": "file:///home/kirito/.dotfiles"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1722707417825"
+                "backupFolder": "1724866918426"
             }
         ]
     },
@@ -82,12 +95,89 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/kirito/.config",
-                                        "path": "/home/kirito/.config",
+                                        "external": "file:///home/kirito/.dotfiles",
+                                        "path": "/home/kirito/.dotfiles",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config"
+                                    "label": "~/.dotfiles"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kirito/projects/amzon",
+                                        "path": "/home/kirito/projects/amzon",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/amzon"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kirito/projects/Anistore",
+                                        "path": "/home/kirito/projects/Anistore",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects/Anistore"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kirito/projects",
+                                        "path": "/home/kirito/projects",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/projects"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///",
+                                        "path": "/",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kirito/.config/i3",
+                                        "path": "/home/kirito/.config/i3",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/i3"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kirito/Downloads",
+                                        "path": "/home/kirito/Downloads",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/kirito/bin",
+                                        "path": "/home/kirito/bin",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/bin"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -96,12 +186,12 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/kirito/.config/i3/config",
-                                        "path": "/home/kirito/.config/i3/config",
+                                        "external": "file:///home/kirito/.pr",
+                                        "path": "/home/kirito/.pr",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/i3/config"
+                                    "label": "~/.pr"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -159,6 +249,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -484,7 +581,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1141,8 +1239,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1727,21 +1824,22 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 290,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/kirito/.config",
-            "backupPath": "/home/kirito/.config/Code - OSS/Backups/9e45c5d680252e743f92d96a6b50cd0c",
+            "folder": "file:///home/kirito/.dotfiles",
+            "backupPath": "/home/kirito/.config/Code - OSS/Backups/0e1459b57b45b0743d2e791ab3a3d1c1",
             "uiState": {
                 "mode": 1,
-                "x": 2,
-                "y": 2,
-                "width": 679,
-                "height": 748
+                "x": 1,
+                "y": 1,
+                "width": 681,
+                "height": 751,
+                "zoomLevel": -1
             }
         },
         "openedWindows": []
