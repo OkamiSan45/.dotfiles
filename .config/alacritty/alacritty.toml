@@ -1,46 +1,46 @@
 [colors.primary]
-background = '#232136'
-foreground = '#e0def4'
+background = '#232136' # 背景色
+foreground = '#e0def4' # 前景色
 
 [colors.cursor]
-text = '#e0def4'
-cursor = '#56526e'
+text = '#e0def4'      # カーソルのテキスト色
+cursor = '#56526e'     # カーソルの色
 
 [colors.vi_mode_cursor]
-text = '#e0def4'
-cursor = '#56526e'
+text = '#e0def4'      # Viモードのカーソルのテキスト色
+cursor = '#56526e'     # Viモードのカーソルの色
 
 [colors.selection]
-text = '#e0def4'
-background = '#44415a'
+text = '#e0def4'      # 選択時のテキスト色
+background = '#44415a' # 選択時の背景色
+
 [colors.normal]
-black = '#393552'
-red = '#eb6f92'
-green = '#3e8fb0'
-yellow = '#f6c177'
-blue = '#9ccfd8'
-magenta = '#c4a7e7'
-cyan = '#ea9a97'
-white = '#e0def4'
+black = '#393552'     # 通常の黒
+red = '#eb6f92'       # 通常の赤
+green = '#3e8fb0'     # 通常の緑
+yellow = '#f6c177'    # 通常の黄
+blue = '#9ccfd8'      # 通常の青
+magenta = '#c4a7e7'   # 通常のマゼンタ
+cyan = '#ea9a97'      # 通常のシアン
+white = '#e0def4'     # 通常の白
 
 [colors.bright]
-black = '#6e6a86'
-red = '#eb6f92'
-green = '#3e8fb0'
-yellow = '#f6c177'
-blue = '#9ccfd8'
-magenta = '#c4a7e7'
-cyan = '#ea9a97'
-white = '#e0def4'
+black = '#6e6a86'     # 明るい黒
+red = '#eb6f92'       # 明るい赤
+green = '#3e8fb0'     # 明るい緑
+yellow = '#f6c177'    # 明るい黄
+blue = '#9ccfd8'      # 明るい青
+magenta = '#c4a7e7'   # 明るいマゼンタ
+cyan = '#ea9a97'      # 明るいシアン
+white = '#e0def4'     # 明るい白
 
 [colors.hints]
-start = { foreground = '#908caa', background = '#2a273f' }
-end = { foreground = '#6e6a86', background = '#2a273f' }
+start = { foreground = '#908caa', background = '#2a273f' } # ヒントの開始色
+end = { foreground = '#6e6a86', background = '#2a273f' }   # ヒントの終了色
 
 [font]
-normal = { family = "monospace", style = "Regular" }
-size = 6.5
+normal = { family = "monospace", style = "Regular" } # フォント設定
+size = 6.5 # フォントサイズ
 
 [window]
-dimensions = { columns = 80, lines = 24 }
-
+dimensions = { columns = 80, lines = 24 } # ウィンドウのサイズ

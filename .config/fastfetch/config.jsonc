@@ -1,117 +1,117 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo":{
-      "source":"~/ASCII-ART/koyomi.txt",
+  "logo": {
+    "source": "~/ASCII-ART/koyomi.txt" // ロゴのソース
   },
   "display": {
-    "separator": "|",
-    "color": "white"
+    "separator": "|", // セパレーター
+    "color": "white" // 色
   },
   "modules": [
     {
-      "type": "title",
+      "type": "title", // モジュールのタイプ
       "color": {
-        "user": "white",
-        "at": "white",
-        "host": "white"
+        "user": "white", // ユーザー名の色
+        "at": "white",    // '@' の色
+        "host": "white"   // ホスト名の色
       }
     },
     "separator",
     {
       "type": "command",
-      "shell": "/bin/sh",
-      "text": "/usr/bin/python3 ~/.config/fastfetch/weather.py",
-      "key": "",
-      "keyColor": "white"
+      "shell": "/bin/sh", // シェル
+      "text": "/usr/bin/python3 ~/.config/fastfetch/weather.py", // コマンド
+      "key": "", // キー
+      "keyColor": "white" // キーの色
     },
     {
       "type": "command",
       "shell": "/bin/sh",
       "text": "/usr/bin/python3 ~/.config/fastfetch/subscribers.py",
       "key": "",
-      "keyColor": "red"
+      "keyColor": "red" // 赤色
     },
     {
-      "type": "os",
+      "type": "os", // OS情報
       "key": "󰣇",
-      "keyColor": "cyan"
+      "keyColor": "cyan" // シアン色
     },
     {
-      "type": "host",
+      "type": "host", // ホスト情報
       "key": "",
-      "keyColor": "yellow"
+      "keyColor": "yellow" // 黄色
     },
     {
-      "type": "kernel",
+      "type": "kernel", // カーネル情報
       "key": "",
       "keyColor": "yellow"
     },
     {
-      "type": "uptime",
+      "type": "uptime", // 稼働時間
       "key": "",
-      "keyColor": "green"
+      "keyColor": "green" // 緑色
     },
     {
-      "type": "packages",
+      "type": "packages", // パッケージ情報
       "key": "",
-      "keyColor": "blue"
+      "keyColor": "blue" // 青色
     },
     {
-      "type": "shell",
+      "type": "shell", // シェル情報
       "key": "",
-      "keyColor": "magenta"
+      "keyColor": "magenta" // マゼンタ色
     },
     {
-      "type": "display",
+      "type": "display", // ディスプレイ情報
       "key": "󰃐",
       "keyColor": "cyan"
     },
     {
-      "type": "wm",
+      "type": "wm", // ウィンドウマネージャー
       "key": "",
       "keyColor": "red"
     },
     {
-      "type": "cursor",
+      "type": "cursor", // カーソル情報
       "key": "",
       "keyColor": "blue"
     },
     {
-      "type": "terminal",
+      "type": "terminal", // ターミナル情報
       "key": "",
       "keyColor": "magenta"
     },
     {
-      "type": "terminalfont",
+      "type": "terminalfont", // ターミナルフォント
       "key": "",
       "keyColor": "red"
     },
     {
-      "type": "cpu",
+      "type": "cpu", // CPU情報
       "key": "",
       "keyColor": "cyan"
     },
     {
-      "type": "gpu",
+      "type": "gpu", // GPU情報
       "key": "",
       "keyColor": "yellow"
     },
     {
-      "type": "memory",
+      "type": "memory", // メモリ情報
       "key": "",
       "keyColor": "green"
     },
     {
-      "type": "swap",
+      "type": "swap", // スワップ情報
       "key": "",
       "keyColor": "blue"
     },
     {
-      "type": "disk",
+      "type": "disk", // ディスク情報
       "key": "",
       "keyColor": "magenta",
       "arguments": {
-        "mountpoint": "/"
+        "mountpoint": "/" // マウントポイント
       }
     },
     {
@@ -119,26 +119,25 @@
       "key": "",
       "keyColor": "magenta",
       "arguments": {
-        "mountpoint": "/home"
+        "mountpoint": "/home" // ホームのマウントポイント
       }
     },
     {
-      "type": "localip",
+      "type": "localip", // ローカルIP情報
       "key": "",
       "keyColor": "cyan"
     },
     {
-      "type": "battery",
+      "type": "battery", // バッテリー情報
       "key": "",
       "keyColor": "yellow"
     },
     {
-      "type": "locale",
+      "type": "locale", // ロケール情報
       "key": "",
       "keyColor": "green"
     },
     "break",
-    "colors"
+    "colors" // 色設定
   ]
 }
-
