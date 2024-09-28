@@ -9,15 +9,20 @@
 #
 # 完全なリファレンスについては、http://i3wm.org/docs/userguide.html をご覧ください！
 
+# ------------------------------------------
+# カスタムキーの開始
+# ------------------------------------------
+exec ~/bin/set_random_wallpaper.sh
+exec --no-startup-id nm-applet
+exec --no-startup-id autotiling
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
 set $mod Mod1
 
-# ウィンドウタイトル用のフォント。異なるフォントが
-# 下の bar {} ブロックで使用されない限り、バーにも使用されます。
+# ウィンドウタイトル用のフォント
 font pango:DejaVu Sans Mono 5
 
 # ボーダーを取り除く
-#
-# Childz に感謝
 for_window [class="^.*"] border pixel d
 
 # Mouse+$mod で浮動ウィンドウを希望の位置にドラッグします
@@ -50,12 +55,6 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# 代わりにカーソルキーを使用できます：
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
-
 # 水平方向に分割
 bindsym $mod+z split h
 
@@ -65,7 +64,7 @@ bindsym $mod+v split v
 # フォーカスされたコンテナをフルスクリーンモードにする
 bindsym $mod+f fullscreen toggle
 
-# コンテナのレイアウトを変更 (スタッキング、タブ、トグル分割)
+# コンテナのレイアウトを変更
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
@@ -76,17 +75,17 @@ bindsym $mod+Shift+space floating toggle
 # 親コンテナにフォーカスを移動
 bindsym $mod+a focus parent
 
-# ワークスペースに切り替えて壁紙を設定
-bindsym $mod+1 workspace 1;
-bindsym $mod+2 workspace 2;
-bindsym $mod+3 workspace 3;
-bindsym $mod+4 workspace 4;
-bindsym $mod+5 workspace 5;
-bindsym $mod+6 workspace 6;
-bindsym $mod+7 workspace 7;
-bindsym $mod+8 workspace 8;
-bindsym $mod+9 workspace 9;
-bindsym $mod+0 workspace 10;
+# ワークスペースに切り替え
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # フォーカスされたコンテナをワークスペースに移動
 bindsym $mod+Shift+1 move container to workspace 1
@@ -102,50 +101,36 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # 設定ファイルを再読み込み
 bindsym $mod+Shift+c reload
-# i3 を再起動 (レイアウト/セッションを保持し、i3 をアップグレードするために使用可能)
+# i3 を再起動
 bindsym $mod+Shift+r restart
-# i3 を終了 (X セッションからログアウトします)
+# i3 を終了
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m '終了ショートカットを押しました。本当に i3 を終了しますか？ これにより X セッションが終了します。' -b 'はい、i3 を終了' 'i3-msg exit'"
 
-# ウィンドウのサイズを変更 (マウスを使っても可能)
+# ウィンドウのサイズを変更
 mode "resize" {
-        # リサイズモードに入るとすぐにこのバインディングがトリガーされます
-
-        # 左を押すとウィンドウの幅が小さくなります。
-        # 右を押すとウィンドウの幅が大きくなります。
-        # 上を押すとウィンドウの高さが小さくなります。
-        # 下を押すとウィンドウの高さが大きくなります。
-        bindsym h resize shrink width 2 px or 10 ppt
-        bindsym j resize grow height 2 px or 10 ppt
-        bindsym k resize shrink height 2 px or 10 ppt
-        bindsym l resize grow width 2 px or 10 ppt
-
-        # 同じバインディングですが、矢印キー用
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # 通常モードに戻る：Enter または Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym h resize shrink width 2 px or 10 ppt
+    bindsym j resize grow height 2 px or 10 ppt
+    bindsym k resize shrink height 2 px or 10 ppt
+    bindsym l resize grow width 2 px or 10 ppt
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
 
-# i3bar を起動してワークスペースバーを表示 (利用可能な場合、システム情報を i3status が取得)
+# i3bar を起動してワークスペースバーを表示
 bar {
-        status_command i3status
-        tray_output primary
+    status_command i3status
+    tray_output primary
 }
 
 # ------------------------------------------
 # カスタムキーの開始
 # ------------------------------------------
-exec ~/bin/set_random_wallpaper.sh
-exec --no-startup-id nm-applet
-exec --no-startup-id autotiling
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
 bindsym $mod+Shift+s exec --no-startup-id ~/dotfiles/bin/monitor
 bindsym $mod+Shift+n exec --no-startup-id ~/dotfiles/bin/resolution
 
@@ -156,7 +141,6 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% # 
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # 音をミュート
 
 # スクリーンの明るさコントロール
-# brightnessctl でスクリーンの明るさを調整
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
 
@@ -167,5 +151,4 @@ bindsym $mod+comma exec ~/.config/i3/scripts/alsa up Headphone
 bindsym $mod+m move workspace to output left
 
 # サスペンド
-bindsym $mod+Ctrl+r exec ~/bin/set_random_wallpaper.sh
-bindsym $mod+Shift+period exec systemctl suspend
+bindsym $mod+Ctrl+s exec --no-startup-id systemctl suspend
