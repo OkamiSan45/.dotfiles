@@ -1,46 +1,93 @@
+# Alacritty 設定ファイル - カラーとフォント設定
+
+# 基本色 (前景色と背景色)
 [colors.primary]
-background = '#232136' # 背景色
-foreground = '#e0def4' # 前景色
+foreground = "#e0def4"     # テキストの色
+background = "#191724"     # 背景色
+dim_foreground = "#908caa" # ディム（薄くなった）テキスト
+bright_foreground = "#e0def4" # 明るいテキストの色
 
+# カーソルの色
 [colors.cursor]
-text = '#e0def4'      # カーソルのテキスト色
-cursor = '#56526e'     # カーソルの色
+text = "#e0def4"     # カーソルのテキスト色
+cursor = "#524f67"   # カーソルの背景色
 
+# Viモードのカーソルの色
 [colors.vi_mode_cursor]
-text = '#e0def4'      # Viモードのカーソルのテキスト色
-cursor = '#56526e'     # Viモードのカーソルの色
+text = "#e0def4"     # Viモード時のカーソルのテキスト色
+cursor = "#524f67"   # Viモード時のカーソルの背景色
 
+# 検索のハイライト色
+[colors.search.matches]
+foreground = "#908caa"   # 検索結果の前景色
+background = "#26233a"   # 検索結果の背景色
+
+[colors.search.focused_match]
+foreground = "#191724"   # フォーカスされた検索結果の前景色
+background = "#ebbcba"   # フォーカスされた検索結果の背景色
+
+# ヒントの色
+[colors.hints.start]
+foreground = "#908caa"   # ヒントの開始色 (前景)
+background = "#1f1d2e"   # ヒントの開始色 (背景)
+
+[colors.hints.end]
+foreground = "#6e6a86"   # ヒントの終了色 (前景)
+background = "#1f1d2e"   # ヒントの終了色 (背景)
+
+# 行インジケーターの色
+[colors.line_indicator]
+foreground = "None"      # 行インジケーターの前景色 (指定なし)
+background = "None"      # 行インジケーターの背景色 (指定なし)
+
+# フッターバーの色
+[colors.footer_bar]
+foreground = "#e0def4"   # フッターバーのテキスト色
+background = "#1f1d2e"   # フッターバーの背景色
+
+# 選択範囲の色
 [colors.selection]
-text = '#e0def4'      # 選択時のテキスト色
-background = '#44415a' # 選択時の背景色
+text = "#e0def4"         # 選択されたテキストの色
+background = "#403d52"   # 選択範囲の背景色
 
+# 通常の色 (ノーマル状態)
 [colors.normal]
-black = '#393552'     # 通常の黒
-red = '#eb6f92'       # 通常の赤
-green = '#3e8fb0'     # 通常の緑
-yellow = '#f6c177'    # 通常の黄
-blue = '#9ccfd8'      # 通常の青
-magenta = '#c4a7e7'   # 通常のマゼンタ
-cyan = '#ea9a97'      # 通常のシアン
-white = '#e0def4'     # 通常の白
+black = "#26233a"        # 通常の黒
+red = "#eb6f92"          # 通常の赤
+green = "#31748f"        # 通常の緑
+yellow = "#f6c177"       # 通常の黄色
+blue = "#9ccfd8"         # 通常の青
+magenta = "#c4a7e7"      # 通常のマゼンタ
+cyan = "#ebbcba"         # 通常のシアン
+white = "#e0def4"        # 通常の白
 
+# 明るい色 (ブライト状態)
 [colors.bright]
-black = '#6e6a86'     # 明るい黒
-red = '#eb6f92'       # 明るい赤
-green = '#3e8fb0'     # 明るい緑
-yellow = '#f6c177'    # 明るい黄
-blue = '#9ccfd8'      # 明るい青
-magenta = '#c4a7e7'   # 明るいマゼンタ
-cyan = '#ea9a97'      # 明るいシアン
-white = '#e0def4'     # 明るい白
+black = "#6e6a86"        # 明るい黒
+red = "#eb6f92"          # 明るい赤
+green = "#31748f"        # 明るい緑
+yellow = "#f6c177"       # 明るい黄色
+blue = "#9ccfd8"         # 明るい青
+magenta = "#c4a7e7"      # 明るいマゼンタ
+cyan = "#ebbcba"         # 明るいシアン
+white = "#e0def4"        # 明るい白
 
-[colors.hints]
-start = { foreground = '#908caa', background = '#2a273f' } # ヒントの開始色
-end = { foreground = '#6e6a86', background = '#2a273f' }   # ヒントの終了色
+# ディムカラー (薄くなった色)
+[colors.dim]
+black = "#6e6a86"        # ディムされた黒
+red = "#eb6f92"          # ディムされた赤
+green = "#31748f"        # ディムされた緑
+yellow = "#f6c177"       # ディムされた黄色
+blue = "#9ccfd8"         # ディムされた青
+magenta = "#c4a7e7"      # ディムされたマゼンタ
+cyan = "#ebbcba"         # ディムされたシアン
+white = "#e0def4"        # ディムされた白
 
+# フォント設定
 [font]
 normal = { family = "monospace", style = "Regular" } # フォント設定
-size = 6.5 # フォントサイズ
+size = 8 # フォントサイズ (ポイント)
 
+# ウィンドウの初期サイズ
 [window]
-dimensions = { columns = 80, lines = 24 } # ウィンドウのサイズ
+dimensions = { columns = 80, lines = 24 } # ウィンドウのサイズ (カラムと行数)

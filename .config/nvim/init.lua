@@ -1,1 +1,1 @@
-require("kirito")
+require("Kirito")

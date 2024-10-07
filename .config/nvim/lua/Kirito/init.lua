@@ -1,10 +1,10 @@
-require("kirito.set")
-require("kirito.remap")
-require("kirito.lazy_init")
+require("Kirito.set")
+require("Kirito.remap")
+require("Kirito.lazy_init")
 
 
 local augroup = vim.api.nvim_create_augroup
-local kiritoGroup = augroup('kirito', {})
+local kiritoGroup = augroup('Kirito', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})

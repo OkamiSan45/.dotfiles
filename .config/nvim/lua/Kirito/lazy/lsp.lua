@@ -20,8 +20,7 @@ return {
             "force",
             {},
             vim.lsp.protocol.make_client_capabilities(),
-            cmp_lsp.default_capabilities()
-        )
+            cmp_lsp.default_capabilities())
 
         require("fidget").setup({})
         require("mason").setup()
@@ -30,15 +29,9 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "gopls",
-                "tsserver",  -- TypeScript
-                "clangd",    -- C/C++
-                "jsonls",    -- JSON
-                "html",      -- HTML
-                "cssls",     -- CSS
-                "jdtls",     -- Java
             },
             handlers = {
-                function(server_name)
+                function(server_name) -- default handler (optional)
                     require("lspconfig")[server_name].setup {
                         capabilities = capabilities
                     }
@@ -58,8 +51,8 @@ return {
                     })
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
-                end,
 
+                end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.lua_ls.setup {
@@ -74,49 +67,6 @@ return {
                         }
                     }
                 end,
-
-                ["jdtls"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.jdtls.setup {
-                        capabilities = capabilities,
-                        -- Add any additional settings you need for Java here
-                    }
-                end,
-
-                ["tsserver"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.tsserver.setup {
-                        capabilities = capabilities,
-                    }
-                end,
-
-                ["clangd"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.clangd.setup {
-                        capabilities = capabilities,
-                    }
-                end,
-
-                ["jsonls"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.jsonls.setup {
-                        capabilities = capabilities,
-                    }
-                end,
-
-                ["html"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.html.setup {
-                        capabilities = capabilities,
-                    }
-                end,
-
-                ["cssls"] = function()
-                    local lspconfig = require("lspconfig")
-                    lspconfig.cssls.setup {
-                        capabilities = capabilities,
-                    }
-                end,
             }
         })
 
@@ -125,7 +75,7 @@ return {
         cmp.setup({
             snippet = {
                 expand = function(args)
-                    require('luasnip').lsp_expand(args.body)
+                    require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
                 end,
             },
             mapping = cmp.mapping.preset.insert({
@@ -136,13 +86,14 @@ return {
             }),
             sources = cmp.config.sources({
                 { name = 'nvim_lsp' },
-                { name = 'luasnip' },
+                { name = 'luasnip' }, -- For luasnip users.
             }, {
                 { name = 'buffer' },
             })
         })
 
         vim.diagnostic.config({
+            -- update_in_insert = true,
             float = {
                 focusable = false,
                 style = "minimal",

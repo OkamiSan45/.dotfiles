@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "kirito.lazy",
+    spec = "Kirito.lazy",
     change_detection = { notify = false }
 })
