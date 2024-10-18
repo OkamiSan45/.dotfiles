@@ -1,33 +1,45 @@
-
 function ColorMyPencils(color)
-    color = "rose-pine" or color,
-    vim.cmd.colorscheme(color),
+    color = color or "rose-pine"
+    vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-
 return {
---[[
+    -- Brightburn theme
     {
         "erikbackman/brightburn.vim",
     },
 
+    -- Tokyo Night theme
     {
         "folke/tokyonight.nvim",
         lazy = false,
         opts = {},
         config = function()
-            ColorMyPencils()
+            ColorMyPencils("tokyonight")
+            require("tokyonight").setup({
+                style = "storm", -- Can be "storm", "moon", "night", or "day"
+                transparent = true,
+                terminal_colors = true,
+                styles = {
+                    comments = { italic = false },
+                    keywords = { italic = false },
+                    sidebars = "dark",
+                    floats = "dark",
+                },
+            })
         end
     },
+
+    -- Gruvbox theme
     {
         "ellisonleao/gruvbox.nvim",
         name = "gruvbox",
         config = function()
             require("gruvbox").setup({
-                terminal_colors = true, -- add neovim terminal colors
+                terminal_colors = true,
                 undercurl = true,
                 underline = false,
                 bold = true,
@@ -43,8 +55,8 @@ return {
                 invert_signs = false,
                 invert_tabline = false,
                 invert_intend_guides = false,
-                inverse = true, -- invert background for search, diffs, statuslines and errors
-                contrast = "", -- can be "hard", "soft" or empty string
+                inverse = true,
+                contrast = "", -- Can be "hard", "soft", or empty string
                 palette_overrides = {},
                 overrides = {},
                 dim_inactive = false,
@@ -52,32 +64,13 @@ return {
             })
         end,
     },
-    {
-        "folke/tokyonight.nvim",
-        config = function()
-            require("tokyonight").setup({
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-                transparent = true, -- Enable this to disable setting the background color
-                terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-                styles = {
-                    -- Style to be applied to different syntax groups
-                    -- Value is any valid attr-list value for `:help nvim_set_hl`
-                    comments = { italic = false },
-                    keywords = { italic = false },
-                    -- Background styles. Can be "dark", "transparent" or "normal"
-                    sidebars = "dark", -- style for sidebars, see below
-                    floats = "dark", -- style for floating windows
-                },
-            })
-        end
-    }, ]]--
 
+    -- Rose Pine theme
     {
         "rose-pine/neovim",
-            name = "rose-pine",
+        name = "rose-pine",
         config = function()
+            ColorMyPencils("rose-pine")
             require('rose-pine').setup({
                 disable_background = true,
                 styles = {
@@ -86,6 +79,32 @@ return {
             })
         end
     },
-},
 
-ColorMyPencils()
+    -- Solarized Osaka theme
+    {
+        "craftzdog/solarized-osaka.nvim",
+        name = "solarized-osaka",
+        config = function()
+            ColorMyPencils("solarized-osaka")
+            require("solarized-osaka").setup({
+                transparent = true, -- Enable this to disable setting the background color
+                terminal_colors = true,
+                styles = {
+                    comments = { italic = true },
+                    keywords = { italic = true },
+                    functions = {},
+                    variables = {},
+                    sidebars = "dark",
+                    floats = "dark",
+                },
+                sidebars = { "qf", "help" },
+                day_brightness = 0.3, -- Adjusts brightness for Day style
+                hide_inactive_statusline = false, -- Hides inactive statuslines
+                dim_inactive = false, -- dims inactive windows
+                lualine_bold = false, -- section headers in lualine will be bold if true
+                on_colors = function(colors) end,
+                on_highlights = function(highlights, colors) end,
+            })
+        end
+    },
+}
