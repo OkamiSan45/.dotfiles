@@ -12,6 +12,8 @@ for_window [class="^.*"] border pixel 2
 # ------------------------------------------
 # ランダム壁紙スクリプトを実行
 exec ~/bin/set_random_wallpaper.sh
+exec --no-startup-id screenkey
+
 # ネットワークマネージャーのアイコンを表示
 exec --no-startup-id nm-applet
 # 自動タイルのスクリプトを実行
