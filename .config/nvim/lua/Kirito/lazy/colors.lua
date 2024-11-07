@@ -98,12 +98,10 @@ return {
                     floats = "dark",
                 },
                 sidebars = { "qf", "help" },
-                day_brightness = 0.3, -- Adjusts brightness for Day style
+                day_brightness = 0.3,             -- Adjusts brightness for Day style
                 hide_inactive_statusline = false, -- Hides inactive statuslines
-                dim_inactive = false, -- dims inactive windows
-                lualine_bold = false, -- section headers in lualine will be bold if true
-                on_colors = function(colors) end,
-                on_highlights = function(highlights, colors) end,
+                dim_inactive = false,             -- dims inactive windows
+                lualine_bold = false,             -- section headers in lualine will be bold if true
             })
         end
     },

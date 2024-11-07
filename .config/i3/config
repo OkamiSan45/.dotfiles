@@ -4,14 +4,14 @@
 # Modキーを設定 (Mod1はAltキー)
 set $mod Mod1
 
-# すべてのウィンドウに1ピクセルのボーダーを設定
+# すべてのウィンドウに2ピクセルのボーダーを設定
 for_window [class="^.*"] border pixel 2
 
 # ------------------------------------------
 # スタートアップアプリケーション
 # ------------------------------------------
 # ランダム壁紙スクリプトを実行
-exec ~/bin/set_random_wallpaper.sh
+exec --no-startup-id ~/bin/set_random_wallpaper.sh
 exec --no-startup-id screenkey
 
 # ネットワークマネージャーのアイコンを表示
@@ -144,9 +144,9 @@ bar {
 # カスタムキー設定
 # ------------------------------------------
 # PulseAudio音量コントロール
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # 画面の明るさコントロール
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
