@@ -10,7 +10,7 @@
     "font_desc": "System-ui Bold Italic 10",
     "font_size": "large",
     "font_color": "#ffffffffffff",
-    "bg_color": "#9a9a99999696",
+    "bg_color": "#000000000000",
     "opacity": 0.0,
     "key_mode": "composed",
     "bak_mode": "full",
@@ -20,10 +20,10 @@
     "vis_shift": false,
     "vis_space": true,
     "geometry": [
-        543,
-        2,
-        266,
-        29
+        1142,
+        119,
+        224,
+        22
     ],
     "screen": 0,
     "start_disabled": false,
